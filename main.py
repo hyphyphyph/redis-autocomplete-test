@@ -49,4 +49,4 @@ for x in xrange(args.iter):
 
     final_sites = [fs for fs in final_sites if fs[0].startswith(search_term)]
     final_sites = [fs[0].strip('*') for fs in sorted(final_sites, key=lambda site: site[1])[0:10]]
-    print final_sites
+    print list(set(final_sites))
